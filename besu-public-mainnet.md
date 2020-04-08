@@ -126,7 +126,7 @@ If you want to mine ethereum using your node, then the `miner-enabled` flag is r
 
 ## Eth2.0 Nodes
 
-![Teku](https://i.imgur.com/CsfGot2.png)
+![Teku](https://i.imgur.com/azPSXJ4.png)
 
 Teku is Pegasys' Eth2.0 beacon client and you can find more information on [the gitter](https://gitter.im/PegaSysEng/teku), its [github repo](https://github.com/PegaSysEng/teku) and of course, the [Teku docs](https://docs.teku.pegasys.tech/en/latest/).
 
@@ -134,8 +134,3 @@ The eth2.0 space is quickly evolving and the best option to setup a node on the 
 
 Some other eth2 clients are [Prism](https://prylabs.net) and [Lighthouse](https://lighthouse.sigmaprime.io). 
 Here's a more comprehensive list: https://eth.wiki/eth2/clients/
-
-
-
-
-
