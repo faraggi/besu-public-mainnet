@@ -1,5 +1,14 @@
 # Mainnet Ethereum Besu Node Guide
 
+#### Contents
+
+- [Current State of the Ethereum Network](#current-state-of-the-ethereum-network)
+- [Hardware & Software](#hardware-&-software)
+- [But why would you run a Node?](but-why-would-you-run-a-node)
+- [Running a Public Ethereum Besu Node](running-a-public-ethereum-besu-node)
+- [Eth2.0 Nodes](eth20-nodes)
+
+
 Ethereum is an open source, public, permissionless peer-to-peer network of **distributed nodes** that send and receive transactions, validate those transactions and remotely execute scripts on smart contracts.
 
 These nodes are what make the Ethereum platform function and allow us to rely on a decentralized network of information.      
@@ -15,7 +24,7 @@ At the time of this article, there are [approximately 6000](https://www.ethernod
 
 ## Hardware & Software
 
-The hardware requirements to be able to run a public mainnet node on ethereum will depend on what client you choose. Besu will need at least 4GB of RAM, and 750GB of hard disk space to run perfomantly. Storage will need to be SSDs or NVMe in order to keep up with the speeds needed to sync the chain.
+The hardware requirements to be able to run a public mainnet node on ethereum will depend on what client you choose. Besu will need at least 4GB of RAM, and 750GB of hard disk space to run performantly. Storage will need to be SSDs or NVMe in order to keep up with the speeds needed to sync the chain.
 
 However, there are options that need more and possibilities to reduce the requirements. This some approximate data on syncing to mainnet on different setups:
 
@@ -32,8 +41,8 @@ Software-wise, Besu runs on Linux, MacOS and Windows. It requires Java 11+ and s
 
 ![Hosting possibilities](https://i.imgur.com/Q2HnacS.png)
 
-Running a public Besu node is possibile on several different hosting possibilities. The most common option for indiviual participants is running on a on-prem device such as a laptop, desktop computer or server. However, cloud options like AWS or Azure are fully comptaible with Besu.
-The main advantages of running on a cloud intance is the ease of setup, and the possibility of running and stopping instances remotely.
+Running a public Besu node is possible on several different hosting possibilities. The most common option for individual participants is running on a on-prem device such as a laptop, desktop computer or server. However, cloud options like AWS or Azure are fully compatible with Besu.
+The main advantages of running on a cloud instance is the ease of setup, and the possibility of running and stopping instances remotely.
 
 
 ## But why would you run a Node?
@@ -45,9 +54,9 @@ The benefits of running a node are two-fold; on one hand, the ecosystem as a who
     - Lower latency/increased diversity (in terms of which node to consult)
 
 - Personal
-    - Blockchin Data analysis on local machines instead of doing remote calls
+    - Blockchain Data analysis on local machines instead of doing remote calls
     - Sending your own transactions from a Node you trust, and propagating it from there
-    - Developing purposes: If your're building your own dapp or service, you will certainly benefit from having your own node to run the dapp on while developing
+    - Developing purposes: If you're building your own dapp or service, you will certainly benefit from having your own node to run the dapp on while developing
 
 
 ## Running a Public Ethereum Besu Node
@@ -57,7 +66,7 @@ After [installing Besu on your node](https://besu.hyperledger.org/en/stable/HowT
 
 - Which network do you want to participate in?  
 - Do you want to be able to execute JSON-RPC calls on it?  
-- Where do you want to store your blockhain data?  
+- Where do you want to store your blockchain data?  
 - Do you want to monitor your node?  
 - Do you want a full node, archival node or pruned node?
 
@@ -90,7 +99,7 @@ The default endpoint for this service is `127.0.0.1`. Use `--rpc-http-host=<new-
 $ besu --rpc-http-enabled
 ```
 
-#### Where do you want to store your blockhain data?  
+#### Where do you want to store your blockchain data?  
 
 By default, Besu stores all blockchain data in the directory you installed Besu in, or ``/opt/besu/database` if using docker.
 
@@ -102,7 +111,7 @@ If you'd like to change this, use the [`data-path` flag](https://besu.hyperledge
 
 
 For a fast-synced Besu node, add the `--sync-mode=FAST` flag. This will modify the way the blockchain's past data syncs on your storage device. 
-For a comprenhensive video of the differences between fast-sync and full sync, [watch this video](https://www.youtube.com/watch?v=4GMIdPt_uTw).
+For a comprehensive video of the differences between fast-sync and full sync, [watch this video](https://www.youtube.com/watch?v=4GMIdPt_uTw).
 ```
 $ besu --sync-mode=FAST
 ```
